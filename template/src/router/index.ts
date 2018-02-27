@@ -43,65 +43,18 @@ const asyncRouterMap = [
         redirect: '/manager',
         name: 'manager',
         meta: {title: '管理', icon: 'component'},
-        //hidden: true,
+        hidden: false,
         children: [{
             path: 'organization',
             name: 'organization',
             component: getView(`manager/organization`),
             meta: { title: '组织机构', icon: 'organization2'}
         },{
-            path: 'permission',
-            name: 'permission',
-            component: getView(`manager/permission`),
-            meta: { title: '权限管理', icon: 'organization'}
-        },{
-            path: 'roles',
-            name: 'roles',
-            component: getView(`manager/roles`),
-            meta: { title: '角色', icon: 'roles'}
-        },{
-            path: 'users',
-            name: 'users',
-            component: getView(`manager/users`),
-            meta: { title: '用户', icon: 'users'}
+            path: 'organization',
+            name: 'organization1',
+            component: getView(`manager/organization`),
+            meta: { title: '组织机构', icon: 'organization2'}
         }]
-    },
-    {
-        path: '/client',
-        component: Layout,
-        redirect: '/client',
-        name: 'client',
-        meta: {title: '客户端', icon: 'client3'},
-        //hidden: true,
-        children: [{
-            path: 'manager',
-            name: 'manager',
-            component: getView(`client/manager`),
-            meta: { title: '客户端管理', icon: 'client5'}
-        },{
-            path: 'ApiResource',
-            name: 'ApiResource',
-            component: getView(`client/ApiResource`),
-            meta: { title: 'ApiResource', icon: 'API2'}
-            /*,
-            children: [{
-                path: 'ApiResource',
-                name: 'ApiResource',
-                component: getView(`client/scope/ApiResource`),
-                meta: { title: 'ApiResource', icon: 'organization2'}
-            },{
-                path: 'IdentityResource',
-                name: 'IdentityResource',
-                component: getView(`client/scope/ApiResource`),
-                meta: { title: 'IdentityResource', icon: 'roles'}
-            }]*/
-        }, {
-            path: 'IdentityResource',
-            name: 'IdentityResource',
-            component: getView(`client/IdentityResource`),
-            meta: {title: 'IdentityResource', icon: 'client4'}
-        }
-        ]
     }
 ]
 

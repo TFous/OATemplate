@@ -17,76 +17,22 @@ var constantRouterMap = [
         name: 'index',
         hidden: true
     },
-    {
-        path: '/client',
-        component: layout_1["default"],
-        redirect: '/client/client',
-        name: '次席信息管理',
-        meta: { title: '次席信息管理', icon: 'component' },
-        children: [{
-                path: 'client',
-                name: 'client',
-                component: getView("client"),
-                meta: { title: '次席信息管理', icon: 'component' }
-            }]
-    },
-    {
-        path: '/changeHistory',
-        component: layout_1["default"],
-        redirect: '/changeHistory/changeHistory',
-        name: 'changeHistory',
-        meta: { title: '次席变更记录', icon: 'international' },
-        children: [{
-                path: 'changeHistory',
-                name: 'changeHistory',
-                component: getView("changeHistory"),
-                meta: { title: '次席变更记录', icon: 'zip' }
-            }]
-    },
-    {
-        path: '/setMoney',
-        component: layout_1["default"],
-        redirect: '/setMoney/setMoney',
-        name: 'setMoney',
-        meta: { title: '出金参数设置', icon: 'international' },
-        children: [{
-                path: 'setMoney',
-                name: 'setMoney',
-                component: getView("setMoney"),
-                meta: { title: '出金参数设置', icon: 'zip' }
-            }]
-    }
 ];
 var asyncRouterMap = [
     { path: '*', redirect: '/404', hidden: true },
-    {
-        path: '/synStream',
-        component: layout_1["default"],
-        redirect: '/synStream/synStream',
-        name: 'synStream',
-        meta: { title: '操作同步流水', icon: 'international' },
-        children: [{
-                path: 'synStream',
-                name: 'synStream',
-                component: getView("synStream"),
-                meta: { title: '操作同步流水', icon: 'withdraw' }
-            }]
-    },
-    {
-        path: '/dictionaries',
-        component: layout_1["default"],
-        redirect: '/dictionaries/immsNames',
-        name: 'dictionaries',
-        meta: { title: '数据字典', icon: 'dictionaries', role: ['admin'] },
-        children: [
-            {
-                path: 'dictionaries',
-                name: 'dictionaries',
-                component: getView("dictionaries"),
-                meta: { title: '数据字典', icon: 'dictionaries', role: ['admin'] }
-            }
-        ]
-    },
+    // {
+    //     path: '/synStream',
+    //     component: layout_1["default"],
+    //     redirect: '/synStream/synStream',
+    //     name: 'synStream',
+    //     meta: { title: '操作同步流水', icon: 'international' },
+    //     children: [{
+    //             path: 'synStream',
+    //             name: 'synStream',
+    //             component: getView("synStream"),
+    //             meta: { title: '操作同步流水', icon: 'withdraw' }
+    //         }]
+    // },
 ];
 var role = JSON.parse(localStorage.getItem(wucc_config_1.STORAGE_IDENTITY_KEY)).profile.role;
 function getView(name) {
