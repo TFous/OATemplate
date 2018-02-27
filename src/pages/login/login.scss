@@ -1,0 +1,13 @@
+@import "../../assets/style/app";
+
+.app {
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    background: url("../../assets/images/bg1.jpg") no-repeat center center;
+    background-size: cover;
+    a {
+        color: $color-primary;
+    }
+}

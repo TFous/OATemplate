@@ -1,0 +1,101 @@
+.person-icon {
+  margin-left: 20px;
+  border-radius: 50%;
+  top: 50%;
+  position: absolute;
+  margin-top: -13px;
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  background: url("../../assets/images/defaultUser.jpg") no-repeat center center;
+  background-size: cover
+}
+
+.user-name {
+  color: #000;
+  padding-left: 20px;
+  padding-right: 25px;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 40px;
+  &:hover{
+    color: #fff;
+  }
+}
+
+.user {
+  display: inline-block;
+  float: right;
+  //position: absolute;
+  height: 50px;
+  right: 0;
+}
+
+.user:hover {
+  background: #495060;
+}
+
+.userselect {
+  background: #495060;
+}
+
+.person-messageShow {
+  border-radius: 5px;
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  right: 0;
+  top: 62px;
+  z-index: 800;
+  background: #dadde0;
+}
+
+.person-message {
+  border-radius: 5px 5px 0 0;
+  background: #657180;
+  width: 300px;
+  height: 200px;
+}
+
+.person-image {
+  border-radius: 50%;
+  margin-left: -45px;
+  left: 50%;
+  top: 15px;
+  position: absolute;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: url("../../assets/images/defaultUser.jpg") no-repeat center center;
+  background-size: cover
+}
+
+.person-userFullName {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 120px;
+  height: 20px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.person-SalesDepartment {
+  font-size: 14px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  padding-top: 30px;
+  color: #ffffff;
+}
+
+.person-password {
+  color: #fff;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.person-layout {
+  margin-top: 10px;
+  margin-left: 110px;
+}

@@ -1,0 +1,15 @@
+.dictionaries-ul{
+    border:1px solid #ebeef5;
+    border-top: 0px none;
+    max-height: 500px;
+    overflow-y: auto;
+    li{
+        &:hover{
+            background: #e2e2e2;
+        }
+        cursor: pointer;
+        padding: 12px 12px;
+        font-size: 14px;
+        border-top: 1px solid #ebeef5;
+    }
+}

@@ -1,0 +1,98 @@
+.navbar {
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 0px !important;
+  .hamburger-container {
+    line-height: 58px;
+    height: 50px;
+    float: left;
+    padding: 0 10px;
+  }
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg);
+    transition: .38s;
+    transform-origin: 50% 50%;
+  }
+
+  .hamburger.is-active {
+    transform: rotate(0deg);
+  }
+  .header {
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+  }
+  .main-change{
+    display: inline-block;
+    float: right;
+    color: #000000;
+    a {
+      text-decoration:none;
+      out-line: none;
+      color: #000000;
+    }
+  }
+  .person{
+    display: inline-block;
+  }
+  .breadcrumb-container{
+    float: left;
+  }
+  .errLog-container {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .right-menu {
+    float: right;
+    height: 100%;
+    &:focus{
+      outline: none;
+    }
+    .right-menu-item {
+      display: inline-block;
+      margin: 0 8px;
+    }
+    .screenfull {
+      height: 20px;
+    }
+    .international{
+      vertical-align: top;
+      .international-icon{
+        font-size: 20px;
+        cursor: pointer;
+        vertical-align: -5px;
+      }
+    }
+    .theme-switch {
+      vertical-align: 15px;
+    }
+    .avatar-container {
+      height: 50px;
+      margin-right: 30px;
+      .avatar-wrapper {
+        cursor: pointer;
+        margin-top: 5px;
+        position: relative;
+        .user-avatar {
+          width: 40px;
+          height: 40px;
+          border-radius: 10px;
+        }
+        .el-icon-caret-bottom {
+          position: absolute;
+          right: -20px;
+          top: 25px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
