@@ -17,7 +17,7 @@ export default class SidebarItem extends Vue {
     routes: array
 
     generateTitle (title) {
-        return title||'' // $t :this method from vue-i18n ,inject in @/lang/index.js
+        return title // $t :this method from vue-i18n ,inject in @/lang/index.js
     }
 
 }
