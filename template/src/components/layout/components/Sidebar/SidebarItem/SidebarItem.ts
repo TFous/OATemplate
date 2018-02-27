@@ -14,10 +14,10 @@ import template from './SidebarItem.vue'
 })
 export default class SidebarItem extends Vue {
     @Prop()
-    routes: array
+    routes: Array
 
-    generateTitle (title) {
-        return title // $t :this method from vue-i18n ,inject in @/lang/index.js
-    }
+    // generateTitle (title) {
+    //     return title // $t :this method from vue-i18n ,inject in @/lang/index.js
+    // }
 
 }
