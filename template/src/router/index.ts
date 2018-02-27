@@ -28,7 +28,7 @@ const asyncRouterMap = [
         component: Layout,
         redirect: '/home/home',
         name: 'home',
-        hidden: true,
+        hidden: false,
         meta: {title: '首页', icon: 'component'},
         children: [{
             path: 'home',

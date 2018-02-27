@@ -1,8 +1,8 @@
 <template>
     <div class="menu-wrapper">
         <template v-for="item in routes" v-if="!item.hidden&&item.children">
-            <template v-if="item.children.length===1" v-for="child in item.children">
-                <router-link :to="item.path+'/'+child.path" :key="child.name">
+            <template v-if="item.children.length===1">
+                <router-link v-for="child in item.children" :to="item.path+'/'+child.path" :key="child.name">
                     <el-menu-item :index="item.path+'/'+child.path" class='submenu-title-noDropdown'>
                         <svg-icon v-if="child.meta&&child.meta.icon" :icon-class="child.meta.icon"></svg-icon>
                         <span v-if="child.meta&&child.meta.title">{{child.meta.title}}</span>
